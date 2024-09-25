@@ -1,0 +1,53 @@
+---
+import { cryptoData } from "../data/cryptocurrencies.json"; // Import the JSON data
+import Layout from "../layouts/Layout.astro";
+import NavbarHandler from "../components/react/NavbarHandler.tsx";
+import BackButton from "../components/react/BackButton.tsx";
+
+// Get the slug from the URL (dynamic part of the route)
+export async function getStaticPaths() {
+  return cryptoData.map((coin:any) => ({
+    params: { slug: coin.symbol },
+  }));
+}
+
+// Fetch the current slug from the URL
+const { slug } = Astro.params;
+
+// Find the coin details based on the slug
+const coin = cryptoData.find((item:any) => item.symbol === slug);
+
+if (!coin) {
+  throw new Error(`Crypto data not found for slug: ${slug}`);
+}
+
+// Destructure the necessary values from the coin object
+const { name, description, symbol } = coin;
+---
+
+<Layout title={`${name} description`}>
+  <NavbarHandler client:only="react" />
+  <main class="md:h-screen items-center justify-center">
+    <div class="container p-4 mx-auto md:w-1/2">
+      <div class="text-center space-y-4 my-10">
+        <h1 class="text-5xl font-bold">
+          {name}</h1>
+          <div class="flex justify-center items-center"><img class="w-10" src={`${import.meta.env.BASE_URL}/svg/color/${symbol}.svg`} alt={`${coin.name}`} /></div>
+      </div>
+
+      <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+        {description}
+      </p>
+
+      <!-- Back Button -->
+      <div class="mt-8 flex justify-center">
+        <BackButton
+          url={`${import.meta.env.BASE_URL}/`}
+          activeLabel="← Back to Crypto List"
+          inactiveLabel="Log in to see crypto list"
+          client:only="react"
+        />
+      </div>
+    </div>
+  </main>
+</Layout>

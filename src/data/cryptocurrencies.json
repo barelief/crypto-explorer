@@ -1,0 +1,70 @@
+{
+    "cryptoData": [
+      {
+        "name": "Bitcoin",
+        "symbol": "btc",
+        "description": "Bitcoin is the first and most well-known cryptocurrency, often referred to as digital gold. It operates on a decentralized network and is known for its strong security, limited supply, and widespread acceptance. Bitcoin is the pioneer of blockchain technology."
+      },
+      {
+        "name": "Ethereum",
+        "symbol": "eth",
+        "description": "Ethereum is a decentralized platform that enables smart contracts and decentralized applications (DApps) to be built and run without any downtime, fraud, or third-party interference. It is also the second-largest cryptocurrency by market capitalization."
+      },
+      {
+        "name": "Litecoin",
+        "symbol": "ltc",
+        "description": "Litecoin is a peer-to-peer cryptocurrency that is known for its fast transaction times and lower fees. It was created as a lighter version of Bitcoin, often referred to as the silver to Bitcoin’s gold."
+      },
+      {
+        "name": "Ripple",
+        "symbol": "xrp",
+        "description": "Ripple is both a platform and a cryptocurrency. The platform is an open-source protocol that allows for cheap and fast transactions, making it ideal for financial institutions. XRP is the native digital asset used on the Ripple network."
+      },
+      {
+        "name": "Bitcoin Cash",
+        "symbol": "bch",
+        "description": "Bitcoin Cash is a fork of Bitcoin, designed to allow more transactions to be processed by increasing the block size. It aims to provide a more scalable solution to Bitcoin’s transaction limitations."
+      },
+      {
+        "name": "Cardano",
+        "symbol": "ada",
+        "description": "Cardano is a blockchain platform that focuses on security, scalability, and sustainability. It is developed with a research-driven approach, and ADA is the cryptocurrency that powers the Cardano ecosystem."
+      },
+      {
+        "name": "Polkadot",
+        "symbol": "dot",
+        "description": "Polkadot enables different blockchains to transfer messages and value in a trust-free fashion. It is designed to integrate multiple blockchains into a unified network, aiming to make the entire ecosystem more efficient."
+      },
+      {
+        "name": "Binance Coin",
+        "symbol": "bnb",
+        "description": "Binance Coin (BNB) is the native cryptocurrency of the Binance exchange. It is used to pay for transactions on the platform and offers users discounts on trading fees. BNB has grown into a multi-use asset within the Binance ecosystem."
+      },
+      {
+        "name": "Solana",
+        "symbol": "sol",
+        "description": "Solana is a high-performance blockchain supporting builders around the world creating decentralized applications (DApps). Solana is known for its fast transaction speeds and low fees, making it a popular choice for scalable decentralized projects."
+      },
+      {
+        "name": "Chainlink",
+        "symbol": "link",
+        "description": "Chainlink is a decentralized oracle network that enables smart contracts to securely interact with real-world data. It bridges the gap between blockchain-based smart contracts and external data sources."
+      },
+      {
+        "name": "Stellar",
+        "symbol": "xlm",
+        "description": "Stellar is a platform that connects banks, payment systems, and people. It is designed to move money quickly, reliably, and at almost no cost, allowing users to create, send, and trade digital representations of all forms of money."
+      },
+      {
+        "name": "Dogecoin",
+        "symbol": "doge",
+        "description": "Dogecoin started as a meme coin but has gained significant popularity due to its strong community and wide-reaching acceptance as a means of transaction. It is known for its fun and friendly nature within the cryptocurrency space."
+      },
+      {
+        "name": "Uniswap",
+        "symbol": "uni",
+        "description": "Uniswap is a decentralized exchange (DEX) built on Ethereum that allows users to swap ERC20 tokens without relying on a centralized intermediary. UNI is the governance token for the Uniswap protocol, giving holders a say in the platform’s future development."
+      }
+    ]
+  }
+  

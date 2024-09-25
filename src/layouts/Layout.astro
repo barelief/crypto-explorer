@@ -1,0 +1,33 @@
+---
+const { title, description } = Astro.props;
+import "../styles/base.css";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content={description} />
+    <link rel="icon" href={`${import.meta.env.BASE_URL}/favicon.svg`} />
+
+    <!-- Preconnect to important origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Load Google Fonts efficiently -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+
+  <body>
+    <slot />
+
+  </body>
+</html>

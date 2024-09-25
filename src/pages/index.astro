@@ -1,0 +1,9 @@
+---
+import Layout from "../layouts/Layout.astro";
+import App from "../components/react/App.tsx";
+import { pageMeta } from "../config/content.config";
+---
+
+<Layout title={pageMeta.title} description={pageMeta.description}>
+  <App client:only="react" />
+</Layout>
