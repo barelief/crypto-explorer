@@ -6,10 +6,13 @@ This project is a Crypto Rates Explorer web application that allows users to log
 
 Demo → <https://blon.lt/explorer>
 
+![Demo](https://blon.lt/explorer/images/demo.png)
+
 ## Features
 
-- **User Authentication**: Secure login implementation using the provided API.
+- **User Authentication**: Login implementation using simple API.
 - **Crypto List Display**: Fetch and display a list of cryptocurrencies, with sorting functionality by name and price.
+- **State management**: use `nanostores` with session local storage to persist users session and sorting actions
 - **Responsive Design**: Works well on desktops, tablets, and mobile devices.
 - **Accessibility (a11y)**: The app includes accessibility improvements, ensuring better support for screen readers
 - **Unit Tests**: The app includes unit tests for critical components, ensuring stability and preventing regressions.
